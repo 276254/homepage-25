@@ -34,14 +34,19 @@
             </a>
             <i class="fas fa-sticky-note" onclick="showNote()"></i>
             <i class="fas fa-calculator"></i>
+            <i class="fas fa-folder-open" onclick="showApp()"></i>
+
+
         </section>
 
         <textarea placeholder="Write a note..." id="note" onkeyup="autoSave()"></textarea>
 
-        <iframe width="219" height="302" id="calc"
-        src="http://calculator-1.com/outdoor/?f=0274C8&r=666666" scrolling="no" frameborder="0"></iframe>
+        <iframe width="219" height="302" id="calc" src="http://calculator-1.com/outdoor/?f=0274C8&r=666666" scrolling="no" frameborder="0"></iframe>
 
-
+        <div class="app-wrapper" id="app">
+            <i class="far fa-times-circle exit" onclick="hideApp()"></i>
+            <h1>Something Here...</h1>
+        </div>
 
         <script src="myScripts.js" async defer></script>
     </body>

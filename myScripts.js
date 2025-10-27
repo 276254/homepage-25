@@ -31,3 +31,20 @@ function showCalculator(){
        showCalc = false;
    }
 }
+var appShowing = false;
+function showApp(){
+   if (appShowing == false){
+       document.getElementById("app").style.opacity = 1;
+       document.getElementById("app").style.zIndex = 1;
+       appShowing = true;
+   }
+}
+
+function hideApp(){
+   if (appShowing == true){
+       document.getElementById("app").style.opacity = 0;
+       document.getElementById("app").style.zIndex = -1;
+       appShowing = false;
+   }
+}
+
